@@ -30,7 +30,7 @@ class CPPN(nn.Module):
         out = self.tanh2(out)
         out = self.ln3(out)
         out = self.tanh3(out)
-        out = torch.sin(self.ln4(out))
+        out = self.ln4(out)
         out = self.sigmoid(out)
 
         return out
